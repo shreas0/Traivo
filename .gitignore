@@ -1,0 +1,3 @@
+backend/.env
+backend/raw_data/Review_db.csv
+backend/data_processing/Hotel_Reviews.csv

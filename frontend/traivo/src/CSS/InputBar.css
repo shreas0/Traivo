@@ -1,0 +1,46 @@
+.input{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    min-height: 10vh;
+   background-color: #111827;
+    
+
+
+}
+
+input{
+    flex: 3;
+    background-color: #171D2B;
+    border : 1px solid #30394B;
+    color: #98A2B3;
+    border-radius: 15px;
+    padding : 10px;
+    font-size: large;
+    margin: 5px;
+}
+
+.input button{
+    flex:1;
+    background-color: #8B5CF6;
+    border-radius: 15px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid black;
+    
+}
+
+.input button:hover{
+    scale : 1.05;
+    background-color: rgb(106, 106, 107);
+}
+
+.send-ico{
+    height: 50px;
+    width: 50px;
+   
+    background-image: url('../send.png');
+    background-size: cover;
+}

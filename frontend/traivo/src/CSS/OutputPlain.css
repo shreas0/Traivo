@@ -1,0 +1,12 @@
+.OutputPlain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    flex: 1;
+    min-height: 70vh;
+    box-sizing: border-box;
+    color: #E8ECF4;
+    width: 100%;
+    background-color: #111827;
+}

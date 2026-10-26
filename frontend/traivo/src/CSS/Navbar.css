@@ -1,0 +1,35 @@
+nav{
+    background-color: #111827;;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+ul{
+    background-color: #0B0F19;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0;
+    width: 80%;
+    border: 0px solid black;
+    border-radius: 20px;
+    padding: 5px;
+    
+
+}
+
+.navbar button{
+    border-width: 0px;
+    padding: 7px;
+    background-color: #171D2B;
+    border-radius: 20px;
+    color: #E8ECF4;
+    scale: 1.3;
+}
+
+.navbar button:hover{
+    background-color: #252D40;
+}
