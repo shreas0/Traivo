@@ -1,0 +1,177 @@
+.about-page {
+    box-sizing: border-box;
+    flex: 1;
+    min-width: 0;
+    min-height: 0;
+    overflow-y: auto;
+    padding: 28px;
+    background: #f7f9ff;
+    color: #263247;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-hero {
+    padding: 12px 0 24px;
+}
+
+.about-intro h1 {
+    margin: 0 0 12px;
+    color: #172033;
+    font-size: 2rem;
+}
+
+.about-intro p,
+.about-section-copy,
+.about-step p,
+.about-feature-card p,
+.about-architecture-card p,
+.about-team-card p {
+    color: #536174;
+    line-height: 1.6;
+}
+
+.about-workflow-image {
+    margin: 20px 0 0;
+}
+
+.about-workflow-image img {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+}
+
+.about-workflow-image figcaption {
+    margin-top: 5px;
+    color: #536174;
+    font-size: 0.85rem;
+}
+
+.about-section {
+    padding: 20px 0;
+    border-top: 1px solid #d9deea;
+}
+
+.about-section-heading h2 {
+    margin: 0 0 12px;
+    color: #172033;
+    font-size: 1.4rem;
+}
+
+.about-section-copy {
+    margin: 0 0 16px;
+}
+
+.about-feature-grid,
+.about-steps,
+.about-architecture,
+.about-team-grid {
+    display: block;
+}
+
+.about-feature-card,
+.about-step,
+.about-architecture-card,
+.about-team-card {
+    padding: 12px 0;
+    border-bottom: 1px solid #d9deea;
+}
+
+.about-step,
+.about-architecture-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.about-step-number,
+.about-architecture-number {
+    color: #536174;
+    font-weight: 600;
+}
+
+.about-feature-card h3,
+.about-step h3,
+.about-architecture-card h3,
+.about-team-card h3 {
+    margin: 0 0 5px;
+    color: #263247;
+    font-size: 1rem;
+}
+
+.about-feature-card p,
+.about-step p,
+.about-architecture-card p,
+.about-team-card p {
+    margin: 0;
+}
+
+.about-architecture-flow {
+    margin: 14px 0 0;
+    color: #536174;
+}
+
+.about-architecture-flow span {
+    padding: 0 4px;
+}
+
+.about-footer {
+    padding: 16px 0;
+    border-top: 1px solid #d9deea;
+    color: #536174;
+    font-size: 0.9rem;
+}
+
+body.dark-mode .about-page {
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+body.dark-mode .about-intro h1,
+body.dark-mode .about-section-heading h2,
+body.dark-mode .about-feature-card h3,
+body.dark-mode .about-step h3,
+body.dark-mode .about-architecture-card h3,
+body.dark-mode .about-team-card h3 {
+    color: #f1f5f9;
+}
+
+body.dark-mode .about-intro p,
+body.dark-mode .about-section-copy,
+body.dark-mode .about-feature-card p,
+body.dark-mode .about-step p,
+body.dark-mode .about-architecture-card p,
+body.dark-mode .about-team-card p,
+body.dark-mode .about-workflow-image figcaption,
+body.dark-mode .about-architecture-flow,
+body.dark-mode .about-footer,
+body.dark-mode .about-step-number,
+body.dark-mode .about-architecture-number {
+    color: #a9b7ca;
+}
+
+body.dark-mode .about-section,
+body.dark-mode .about-feature-card,
+body.dark-mode .about-step,
+body.dark-mode .about-architecture-card,
+body.dark-mode .about-team-card,
+body.dark-mode .about-footer {
+    border-color: #334155;
+}
+
+@media (max-width: 600px) {
+    .about-page {
+        padding: 20px 16px;
+    }
+
+    .about-intro h1 {
+        font-size: 1.7rem;
+    }
+
+    .about-architecture-flow {
+        line-height: 1.8;
+    }
+}

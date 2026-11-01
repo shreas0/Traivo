@@ -1,0 +1,252 @@
+.account-sidebar {
+    box-sizing: border-box;
+    position: absolute;
+    top: 54px;
+    right: -350px;
+    z-index: 3;
+    width: 320px;
+    max-width: 85vw;
+    height: calc(100vh - 54px);
+    padding: 18px;
+    background-color: white;
+    border-left: 1px solid #e2e8f0;
+    box-shadow: -4px 4px 14px rgba(15, 23, 42, 0.1);
+    transition: right 0.3s ease;
+    color: #334155;
+}
+
+.account-sidebar-heading h3 {
+    margin: 4px 0 18px;
+    font-size: 1.1rem;
+    font-weight: 650;
+}
+
+.account-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 10px;
+    border-radius: 10px;
+    background-color: #f7f9ff;
+}
+
+.account-profile img {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+}
+
+.account-profile div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.account-profile strong {
+    font-size: 0.9rem;
+}
+
+.account-profile span {
+    color: #64748b;
+    font-size: 0.78rem;
+}
+
+.account-menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+}
+
+.account-menu button {
+    padding: 11px 10px;
+    border: 0;
+    border-radius: 8px;
+    background: transparent;
+    color: #334155;
+    font: inherit;
+    font-size: 0.9rem;
+    text-align: left;
+    cursor: pointer;
+}
+
+.account-menu button:hover {
+    background-color: #ebf2ff;
+}
+
+.account-menu-divider {
+    height: 1px;
+    margin: 8px 0;
+    background-color: #e2e8f0;
+}
+
+.account-settings {
+    display: none;
+    margin-top: 12px;
+}
+
+.account-settings h4 {
+    margin: 20px 0 8px;
+    font-size: 0.8rem;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.account-settings .settings-back {
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    border-radius: 8px;
+    background: transparent;
+    color: #334155;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+.account-settings .settings-back:hover {
+    background-color: #ebf2ff;
+}
+
+.setting-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 14px 10px;
+    border-bottom: 1px solid #e2e8f0;
+    cursor: pointer;
+}
+
+.setting-row span {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.setting-row strong {
+    font-size: 0.9rem;
+}
+
+.setting-row small,
+.settings-note {
+    color: #64748b;
+    font-size: 0.76rem;
+}
+
+.setting-row input {
+    width: 17px;
+    height: 17px;
+    accent-color: #5d2fd7;
+}
+
+.setting-row select {
+    padding: 6px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background: white;
+    color: #334155;
+}
+
+.settings-note {
+    margin: 14px 10px;
+}
+
+body.dark-mode nav,
+body.dark-mode .navbar button,
+body.dark-mode .account-sidebar,
+body.dark-mode .sidebar,
+body.dark-mode .chat-output,
+body.dark-mode .input-elements {
+    background-color: #1e293b;
+    color: #e2e8f0;
+}
+
+body.dark-mode .app-shell,
+body.dark-mode .app-content,
+body.dark-mode .main,
+body.dark-mode .OutputPlain,
+body.dark-mode .input-block {
+    background-color: #0f172a;
+}
+
+body.dark-mode .OutputPlain,
+body.dark-mode .chat-output,
+body.dark-mode .greetings h3,
+body.dark-mode .account-sidebar,
+body.dark-mode .account-menu button,
+body.dark-mode .account-settings .settings-back,
+body.dark-mode .history-entry,
+body.dark-mode .history h3,
+body.dark-mode .new-chat button,
+body.dark-mode #input-area input,
+body.dark-mode .user-msg {
+    color: #e2e8f0;
+}
+
+body.dark-mode .account-profile,
+body.dark-mode .nav-buttons,
+body.dark-mode .account-menu button:hover,
+body.dark-mode .account-settings .settings-back:hover,
+body.dark-mode .history-entry.active,
+body.dark-mode .sidebar button:hover {
+    background-color: #334155;
+}
+
+body.dark-mode .account-profile span,
+body.dark-mode .setting-row small,
+body.dark-mode .settings-note,
+body.dark-mode .account-settings h4 {
+    color: #94a3b8;
+}
+
+body.dark-mode .setting-row,
+body.dark-mode .account-menu-divider {
+    border-color: #475569;
+}
+
+body.dark-mode .setting-row select {
+    background-color: #0f172a;
+    border-color: #475569;
+    color: #e2e8f0;
+}
+
+body.dark-mode .sidebar {
+    border-right-color: #334155;
+}
+
+body.dark-mode .account-sidebar {
+    border-left-color: #334155;
+}
+
+body.dark-mode #sidebar-btn img,
+body.dark-mode .traivo-logo img,
+body.dark-mode #account img,
+body.dark-mode .account-profile img,
+body.dark-mode #new-chat img,
+body.dark-mode .mic-btn img {
+    filter: brightness(0) invert(1);
+}
+
+body.dark-mode #sidebar-btn:hover {
+    background-color: #334155;
+}
+
+body.dark-mode .mic-btn {
+    background-color: transparent;
+    border-color: #475569;
+}
+
+body.dark-mode #speak img {
+    border-color: #64748b;
+    filter: brightness(0) invert(1);
+}
+
+body.dark-mode #speak img:hover {
+    background-color: #5d2fd7;
+}
+
+body.large-chat-text .chat-output,
+body.large-chat-text .user-msg {
+    font-size: 1.08rem;
+}

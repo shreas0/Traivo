@@ -1,0 +1,45 @@
+destination,attraction,category,vibe,cost,visit_hours
+Goa,Baga Beach,beach,beach,low,3
+Goa,Fort Aguada,fort,history,low,2
+Goa,Dudhsagar Falls,nature,nature,medium,6
+Goa,Fontainhas,heritage,culture,low,2
+Manali,Solang Valley,adventure,adventure,medium,5
+Manali,Hidimba Devi Temple,religious,culture,low,1
+Manali,Jogini Waterfall,nature,nature,low,4
+Manali,Old Manali,neighborhood,food,low,2
+Jaipur,Amber Fort,fort,history,medium,3
+Jaipur,Hawa Mahal,heritage,history,low,1
+Jaipur,City Palace Jaipur,museum,culture,medium,2
+Jaipur,Nahargarh Fort,fort,history,low,2
+Udaipur,City Palace Udaipur,palace,history,medium,3
+Udaipur,Lake Pichola,lake,nature,medium,2
+Udaipur,Saheliyon Ki Bari,garden,nature,low,1
+Udaipur,Jagdish Temple,religious,culture,low,1
+Agra,Taj Mahal,monument,history,medium,3
+Agra,Agra Fort,fort,history,low,2
+Agra,Mehtab Bagh,garden,nature,low,2
+Agra,Itmad-ud-Daula,monument,history,low,1
+Delhi,Humayun's Tomb,monument,history,low,2
+Delhi,Qutub Minar,monument,history,low,2
+Delhi,Red Fort,fort,history,medium,2
+Delhi,Chandni Chowk,market,food,low,2
+Mumbai,Gateway of India,monument,history,low,1
+Mumbai,Marine Drive,waterfront,nature,low,2
+Mumbai,Elephanta Caves,caves,history,medium,5
+Mumbai,Chhatrapati Shivaji Maharaj Vastu Sangrahalaya,museum,culture,medium,3
+Rishikesh,Laxman Jhula,bridge,culture,low,1
+Rishikesh,Triveni Ghat,religious,culture,low,1
+Rishikesh,Neer Garh Waterfall,nature,nature,low,3
+Rishikesh,Shivpuri rafting,adventure,adventure,high,4
+Varanasi,Kashi Vishwanath Temple,religious,culture,low,2
+Varanasi,Dashashwamedh Ghat,riverfront,culture,low,2
+Varanasi,Sarnath,heritage,history,low,4
+Varanasi,Manikarnika Ghat,riverfront,culture,low,1
+Pondicherry,Promenade Beach,beach,beach,low,2
+Pondicherry,French Quarter,heritage,culture,low,2
+Pondicherry,Auroville,culture,culture,low,4
+Pondicherry,Paradise Beach,beach,beach,medium,4
+Kerala Backwaters,Alappuzha Backwaters,nature,nature,medium,5
+Kerala Backwaters,Kumarakom Bird Sanctuary,nature,nature,low,3
+Kerala Backwaters,Pathiramanal Island,island,nature,low,3
+Kerala Backwaters,Alappuzha Beach,beach,beach,low,2

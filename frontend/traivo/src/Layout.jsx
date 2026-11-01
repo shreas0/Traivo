@@ -1,13 +1,15 @@
 
 import Navbar from "./Components/Navbar";
+import AccountSideBar from "./Components/AccountSideBar";
 import { Outlet } from "react-router-dom";
 
 function Layout() {
   return (
-    <div>
+    <div className="app-shell">
       <Navbar />
+      <AccountSideBar />
 
-      <main>
+      <main className="app-content">
         <Outlet />
       </main>
     </div>

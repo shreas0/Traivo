@@ -1,12 +1,47 @@
-.OutputPlain{
+.OutputPlain {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: xx-large;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 1rem;
     flex: 1;
-    min-height: 70vh;
+    min-height: 0;
     box-sizing: border-box;
     color: #E8ECF4;
     width: 100%;
-    background-color: #111827;
+    background-color: #f7f9ff;
+    padding-left: 5%;
+    padding-right: 30px;
+    padding-bottom : 8px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    overscroll-behavior: contain;
 }
+
+.messages-list {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    gap: 16px;
+    margin-top: auto;
+}
+
+.message-pair {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.greetings{
+    margin-top: 150px;
+    color: #334155;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.greetings h3 {
+    margin: 0;
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 600;
+    letter-spacing: -0.03em;
+}
+
