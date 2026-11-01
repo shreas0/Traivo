@@ -16,6 +16,12 @@
     letter-spacing: 0.005em;
 }
 
+.chat-text a {
+    color: #315fba;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .chat-heading {
     font-size: 1.05rem;
     font-weight: 650;

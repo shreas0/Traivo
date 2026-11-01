@@ -1,13 +1,21 @@
 import '../../CSS/ChatOutput.css';
 
 function formatInline(text) {
-    return text.split(/(\*\*.*?\*\*|__.*?__|\[[^\]]+\]\(https:\/\/www\.google\.com\/maps\/search\/\?[^)]+\))/g).map((part, index) => {
+    return text.split(/(\*\*.*?\*\*|__.*?__|\[[^\]]+\]\(https?:\/\/[^)\s]+\))/g).map((part, index) => {
         if ((part.startsWith("**") && part.endsWith("**")) || (part.startsWith("__") && part.endsWith("__"))) {
             return <strong key={index}>{part.slice(2, -2)}</strong>;
         }
-        let link = part.match(/^\[([^\]]+)\]\((https:\/\/www\.google\.com\/maps\/search\/\?[^)]+)\)$/);
+        let link = part.match(/^\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)$/);
         if (link) {
-            return <a href={link[2]} target="_blank" rel="noreferrer" key={index}>{link[1]}</a>;
+            return <a href={link[2]} target="_blank" rel="noopener noreferrer" key={index}>{link[1]}</a>;
+        }
+        if (part.includes("http://") || part.includes("https://")) {
+            return part.split(/(https?:\/\/[^\s|]+)/g).map((text, linkIndex) => {
+                if (text.startsWith("http://") || text.startsWith("https://")) {
+                    return <a href={text} target="_blank" rel="noopener noreferrer" key={`${index}-${linkIndex}`}>Open link</a>;
+                }
+                return text;
+            });
         }
         return part;
     });
