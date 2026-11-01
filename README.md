@@ -15,6 +15,31 @@ The project has two parts. The React app runs in the browser. The Python server 
 
 The browser keeps the active chat in memory while the page is open. A refresh clears that temporary state. Signed in users can also save and load chats with Firebase Firestore. The Python server does not receive Firebase credentials or write to Firestore.
 
+## Architecture diagram
+
+This diagram shows the main request path and the services used by each part of the app.
+
+```mermaid
+flowchart LR
+    User[User] --> React[React app]
+    React -->|message and chat history| Flask[Flask server]
+    React <-->|sign in and saved chats| Firebase[Firebase Auth and Firestore]
+    Flask --> Router[Model router]
+    Router -->|understand request and write answer| Groq[Groq language model]
+    Router --> Dest[Destination model]
+    Router --> Budget[Budget model]
+    Router --> Attraction[Attraction model]
+    Router --> Reviews[Review CSV files]
+    Router --> Maps[Google Maps links]
+    Router --> Images[Unsplash images]
+    Router --> Flask
+    Flask -->|answer and image URLs| React
+    React -->|audio upload or speech request| Flask
+    Flask --> Voice[Speech helpers]
+```
+
+Groq handles language tasks, while the destination, budget, and attraction models run in Python using their saved model files. Firebase is used directly by the browser for sign in and saved chat history.
+
 ## Project layout
 
 The main application code is in `backend` and `frontend/traivo`. Folders such as `node_modules`, Python `__pycache__`, and React `build` are generated files. They are not source code and do not need to be edited by hand.
